@@ -54,10 +54,51 @@ body{
 position: absolute;
 top: 45px;
 right: 10px;
+visibility: hidden;
 }
 
-.checkbox{
+.form-control small{
+    position:  absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.checkbox-control{
 position: relative;
 right: 170px;
+}
 
+.form button{
+    background-color: #f1721c;
+    border: #e7823e;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Error and Success*/
+.form-control.success input{
+border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+.form-control.form-control.success i.fa-check-circle{
+color: #2ecc71;
+visibility: visible;
+}
+
+.form-control.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+    }
+
+.form-control.error small{
+    color: #e74c3c;
+    visibility: visible;
 }
