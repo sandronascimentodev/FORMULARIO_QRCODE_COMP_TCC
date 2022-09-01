@@ -1,20 +1,26 @@
 const form = document.getElementById("form");
-const username = document.getElementById("namehard");
-const checkin = document.getElementById("checkin");
-const checkon = document.getElementById("checkon");
+const namehard = document.getElementById("namehard");
+const checkboxint = document.getElementById("checkboxint");
+const checkboxon = document.getElementById("checkboxon");
+const assunto = document.getElementById("assunto");
 
-form.addEventListener("submit", (e) => {
+/*form.addEventListener("submit", (e) => {
     e.preventDefault();
+
     checkInputs();
-})
+});*/
 
 function checkInputs() {
     const namehardValue = namehard.value;
-    const checkinValue = checkin.value;
-    const checkonValue = checkon.value;
+    const checkboxintValue = checkboxint.value;
+    const checkboxonValue = checkboxon.value;
+    const assuntoValue = assunto.value;
 
-    if (namehardValue == '') {
-        setErrorFor(namehard, 'The machine name is empty')
+
+    if (namehardValue === '') {
+        setErrorFor(namehard, "The machine name is empty")
+    } else {
+        setSuccessFor(namehard);
     }
 }
 
