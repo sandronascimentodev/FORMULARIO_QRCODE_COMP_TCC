@@ -15,23 +15,20 @@ function checkInputs() {
     let checkboxonValue = checkboxon.value;
     let assuntoValue = assunto.value;
 
-    if (namehardValue = " ") {
+    if (namehardValue === "") {
         setErrorFor(namehard, "The machine name is empty");
     } else {
         setSuccessFor(namehard);
     }
 
-if (checkboxintValue = " ") {
-    setErrorFor(checkboxint, "The machine name is empty");
-} else {
-    setSuccessFor(checkboxint);
-}
+    let formControls = form.querySelectorAll(".form-control");
+    let formIsValid = [...formControls].every(formControl => {
+return (formControl.className === "form-control success");
+    });
 
-if (checkboxonValue = " ") {
-    setErrorFor(checkboxon, "The machine name is empty");
-} else {
-    setSuccessFor(checkboxon);
-}
+    if (formIsValid){
+        console.log("O formulário está 100% valido");
+    } 
 }
 
 function setErrorFor(input, message) {
