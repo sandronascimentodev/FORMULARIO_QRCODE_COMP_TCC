@@ -14,6 +14,40 @@ body{
     align-items: center;
 }
 
+a{
+color: #f1721c;
+text-decoration: none;
+transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+nav{
+   display: flex; 
+   justify-content: space-around;
+   align-items: center;
+   font-family: 'Poppins', sans-serif;
+   background-color: #eee;
+   height: 8vh;
+   width: 100%;
+   position: absolute;
+   padding-right: 90%;
+   right: 0%;
+   
+}
+
+header{
+    padding-bottom: 1000px;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
 .container{
     background-color: white;
     border-radius: 10px;
