@@ -16,7 +16,7 @@ function checkInputs() {
     let assuntoValue = assunto.value;
 
     if (namehardValue === "") {
-        setErrorFor(namehard, "The machine name is empty");
+        setErrorFor(namehard, "Insira o nome do computador");
     } else {
         setSuccessFor(namehard);
     }
